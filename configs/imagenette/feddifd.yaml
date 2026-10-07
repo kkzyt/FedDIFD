@@ -1,0 +1,35 @@
+# system hyper parameters
+sys_n_client: 10
+sys_i_seed: 42
+sys_res_root: train_results
+sys_model: ResNet18
+sys_dataset: Imagenette
+
+# client hyper parameters
+client_instance_lr: 0.01
+client_instance_bs: 128
+client_instance_n_epoch: 10
+client_instance: coreset+_dif_dist_syn
+
+# server
+server_n_epoch: 10
+server_bs: 128
+server_lr: 0.02
+server_momentum: 0.9
+server_optimizer: SGD
+
+# FedDIFD hyper parameters
+# Coreset init
+feddifd_mipc: 50
+feddifd_ipc: 50
+feddifd_num_crop: 10
+
+# Synthesis recovering
+feddifd_iteration: 100
+feddifd_jitter: 0
+feddifd_lr: 0.1
+feddifd_l2_scale: 0
+feddifd_tv_l2: 0
+feddifd_r_bn: 0
+feddifd_r_c: 0
+feddifd_iter_mode: ipc

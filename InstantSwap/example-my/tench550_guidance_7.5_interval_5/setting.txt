@@ -1,0 +1,13 @@
+------------------ start ------------------
+model_id : /opt/data/private/code/FedDIFD/InstantSwap/Flower_Concept
+source_mask : ./example-my/bbox.jpg
+source_image : ./example-my/ILSVRC2012_val_00009379.JPEG
+source_prompt : An image of a tench.
+target_prompt : An image of a
+output : ./example-my/tench550_guidance_7.5_interval_5/
+iters : 550
+diff_prompt : tench
+diff_prompt_source : shell
+guidance_scale : 7.5
+interval : 5
+------------------- end -------------------
